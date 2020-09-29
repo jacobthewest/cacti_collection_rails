@@ -1,0 +1,35 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  common_name: MyString
+  genus: MyString
+  species: MyString
+  cultivar: MyString
+  light_requirements: MyText
+  soil_requirements: MyText
+  water_requirements: MyText
+  fruit: MyText
+  flower: MyText
+  hardiness: MyText
+  fertilizer: MyText
+  propagation: MyText
+  growth_rate: MyText
+  max_size: MyText
+  interesting_facts: MyText
+
+two:
+  common_name: MyString
+  genus: MyString
+  species: MyString
+  cultivar: MyString
+  light_requirements: MyText
+  soil_requirements: MyText
+  water_requirements: MyText
+  fruit: MyText
+  flower: MyText
+  hardiness: MyText
+  fertilizer: MyText
+  propagation: MyText
+  growth_rate: MyText
+  max_size: MyText
+  interesting_facts: MyText
