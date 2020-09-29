@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class CactuTest < ActiveSupport::TestCase
+class CactusTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end
