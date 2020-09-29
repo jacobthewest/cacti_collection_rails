@@ -1,0 +1,2 @@
+class CactiController < ApplicationController
+end
