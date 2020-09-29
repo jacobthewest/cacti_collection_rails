@@ -10,9 +10,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_09_29_190832) do
+ActiveRecord::Schema.define(version: 2020_09_29_202547) do
 
-  create_table "cactus", force: :cascade do |t|
+  create_table "cacti", force: :cascade do |t|
     t.string "common_name", null: false
     t.string "genus", null: false
     t.string "species", null: false

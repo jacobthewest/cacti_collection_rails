@@ -1,6 +1,6 @@
-class CreateCactus < ActiveRecord::Migration[6.0]
+class CreateCacti < ActiveRecord::Migration[6.0]
   def change
-    create_table :cactus do |t|
+    create_table :cacti do |t|
       t.string :common_name, null:false
       t.string :genus, null:false
       t.string :species, null:false
