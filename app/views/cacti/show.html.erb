@@ -1,0 +1,81 @@
+<p>
+  <strong>Common Name:</strong>
+  <%= @cactus.common_name %>
+</p>
+ 
+<p>
+  <strong>Genus:</strong>
+  <%= @cactus.genus %>
+</p>
+
+<p>
+  <strong>Species:</strong>
+  <%= @cactus.species %>
+</p>
+
+<p>
+  <strong>Cultivar:</strong>
+  <%= @cactus.cultivar %>
+</p>
+
+<p>
+  <strong>Light Requirements:</strong>
+  <%= @cactus.light_requirements %>
+</p>
+
+<p>
+  <strong>Soil Requirements:</strong>
+  <%= @cactus.soil_requirements %>
+</p>
+
+<p>
+  <strong>Water Requirements:</strong>
+  <%= @cactus.water_requirements %>
+</p>
+
+<p>
+  <strong>Fruit:</strong>
+  <%= @cactus.fruit %>
+</p>
+
+<p>
+  <strong>Flower:</strong>
+  <%= @cactus.flower %>
+</p>
+
+<p>
+  <strong>Hardiness:</strong>
+  <%= @cactus.hardiness %>
+</p>
+
+
+<p>
+  <strong>Fertilizer:</strong>
+  <%= @cactus.fertilizer %>
+</p>
+
+
+<p>
+  <strong>Propagation:</strong>
+  <%= @cactus.propagation %>
+</p>
+
+
+<p>
+  <strong>Growth Rate:</strong>
+  <%= @cactus.growth_rate %>
+</p>
+
+
+<p>
+  <strong>Max Size:</strong>
+  <%= @cactus.max_size %>
+</p>
+
+<p>
+  <strong>Interesting Facts:</strong>
+  <%= @cactus.interesting_facts %>
+</p>
+
+<%= link_to 'Home', cacti_path %>
+<%= link_to 'Edit Cactus', edit_cactus_path(@cactus) %>

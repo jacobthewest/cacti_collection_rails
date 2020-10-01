@@ -1,0 +1,69 @@
+<h1>Edit Cactus</h1>
+
+<%= form_with(model: @cactus, local: true) do |form| %>
+    <p>
+      <%= form.label :common_name %><br>
+      <%= form.text_field :common_name %>
+    </p>
+    <p>
+      <%= form.label :genus %><br>
+      <%= form.text_field :genus %>
+    </p>
+    <p>
+        <%= form.label :species %><br>
+        <%= form.text_field :species %>
+    </p>
+    <p>
+        <%= form.label :cultivar %><br>
+        <%= form.text_field :cultivar %>
+    </p>
+    <p>
+        <%= form.label :light_requirements %><br>
+        <%= form.text_area :light_requirements %>
+    </p>
+    <p>
+        <%= form.label :soil_requirements %><br>
+        <%= form.text_area :soil_requirements %>
+    </p>
+    <p>
+        <%= form.label :water_requirements %><br>
+        <%= form.text_area :water_requirements %>
+    </p>
+    <p>
+        <%= form.label :fruit %><br>
+        <%= form.text_area :fruit %>
+    </p>
+    <p>
+        <%= form.label :flower %><br>
+        <%= form.text_area :flower %>
+    </p>
+    <p>
+        <%= form.label :hardiness %><br>
+        <%= form.text_area :hardiness %>
+    </p>
+    <p>
+        <%= form.label :fertilizer %><br>
+        <%= form.text_area :fertilizer %>
+    </p>
+    <p>
+        <%= form.label :propagation %><br>
+        <%= form.text_area :propagation %>
+    </p>
+    <p>
+        <%= form.label :growth_rate %><br>
+        <%= form.text_area :growth_rate %>
+    </p>
+    <p>
+        <%= form.label :max_size %><br>
+        <%= form.text_area :max_size %>
+    </p>
+    <p>
+        <%= form.label :interesting_facts %><br>
+        <%= form.text_area :interesting_facts %>
+    </p>
+    <p>
+      <%= form.submit %>
+    </p>
+<% end %>
+
+<%= link_to 'Home', cacti_path %>

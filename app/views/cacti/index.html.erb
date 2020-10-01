@@ -1,1 +1,59 @@
 <h1>Cacti Collection</h1>
+
+<%= link_to 'Add Cactus', new_cactus_path %>
+
+<table>
+    <% @cacti.each do |cactus| %>
+        <tr>
+            <th>Cactus: </th> 
+            <td>
+                <%= cactus.common_name %> <%= cactus.genus %> <%= cactus.species %> <%= cactus.cultivar %> 
+            </td>
+        </tr>
+        <tr>
+            <th>Light Requirements</th> <td><%= cactus.light_requirements %></td>
+        </tr>
+        <tr>
+            <th>Soil Requirements</th> <td><%= cactus.soil_requirements %></td>
+        </tr>
+        <tr>
+            <th>Water Requirements</th> <td><%= cactus.water_requirements %></td>
+        </tr>
+        <tr>
+            <th>Fruit</th> <td><%= cactus.fruit %></td>
+        </tr>
+        <tr>
+            <th>Flower</th> <td><%= cactus.flower %></td>
+        </tr>
+        <tr>
+            <th>Hardiness</th> <td><%= cactus.hardiness %></td>
+        </tr>
+        <tr>
+            <th>Fertilizer</th> <td><%= cactus.fertilizer %></td>
+        </tr>
+        <tr>
+            <th>Propagation</th> <td><%= cactus.propagation %></td>
+        </tr>
+        <tr>
+            <th>Growth Rate</th> <td><%= cactus.growth_rate %></td>
+        </tr>
+        <tr>
+            <th>Max Size</th> <td><%= cactus.max_size %></td>
+        </tr>
+        <tr>
+            <th>Interesting Facts</th> <td><%= cactus.interesting_facts %></td>
+        </tr>
+        <tr>
+            <th>Link</th> <td><%= link_to 'Show', cactus_path(cactus) %></td>
+        </tr>
+        <tr>
+            <th>Link</th> <td><%= link_to 'Edit', edit_cactus_path(cactus) %></td>
+        </tr>
+        <tr>
+            <th>Link</th> <td><%= link_to 'Destroy', cactus_path(cactus),
+            method: :delete,
+            data: { confirm: 'Are you sure?' } %></td>
+        </tr>
+        <tr/>
+    <% end %>
+</table>
