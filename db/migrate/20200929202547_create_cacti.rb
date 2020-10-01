@@ -5,6 +5,7 @@ class CreateCacti < ActiveRecord::Migration[6.0]
       t.string :genus, null:false
       t.string :species, null:false
       t.string :cultivar
+      t.string :imageUrl, null:false
       t.text :light_requirements
       t.text :soil_requirements
       t.text :water_requirements

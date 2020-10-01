@@ -5,10 +5,14 @@
 <table>
     <% @cacti.each do |cactus| %>
         <tr>
-            <th>Cactus: </th> 
+            <th> Cactus: </th> 
             <td>
                 <%= cactus.common_name %> <%= cactus.genus %> <%= cactus.species %> <%= cactus.cultivar %> 
             </td>
+        </tr>
+        <tr>
+            <th>Image</th>
+            <td><%= image_tag("", :alt => "rss feed") %></td>
         </tr>
         <tr>
             <th>Light Requirements</th> <td><%= cactus.light_requirements %></td>
@@ -54,6 +58,9 @@
             method: :delete,
             data: { confirm: 'Are you sure?' } %></td>
         </tr>
-        <tr/>
+        <tr class="extra_space">
+            <th>Dummy Text</th>
+            <td>Dummy Text</td>
+        </tr>
     <% end %>
 </table>
