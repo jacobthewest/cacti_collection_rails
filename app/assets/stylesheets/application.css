@@ -19,6 +19,16 @@
  }
 
  th {
-     text-align: left;
+     text-align: center;
      padding-right: 10px;
+     border: solid black 1px;
+ }
+
+ td {
+     border: solid black 1px;
+ }
+
+ img {
+     height: 200px;
+     width: 200px;
  }

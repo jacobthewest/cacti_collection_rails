@@ -17,6 +17,7 @@ ActiveRecord::Schema.define(version: 2020_09_29_202547) do
     t.string "genus", null: false
     t.string "species", null: false
     t.string "cultivar"
+    t.string "imageUrl", null: false
     t.text "light_requirements"
     t.text "soil_requirements"
     t.text "water_requirements"

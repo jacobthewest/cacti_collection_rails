@@ -1,18 +1,18 @@
 <h1>Cacti Collection</h1>
 
-<%= link_to 'Add Cactus', new_cactus_path %>
+<%= link_to 'Add Cactus', new_cactus_url %>
 
 <table>
     <% @cacti.each do |cactus| %>
         <tr>
             <th> Cactus: </th> 
             <td>
-                <%= cactus.common_name %> <%= cactus.genus %> <%= cactus.species %> <%= cactus.cultivar %> 
+                <%= cactus.common_name %>- <%= cactus.genus %> <%= cactus.species %> <%= cactus.cultivar %> 
             </td>
         </tr>
         <tr>
             <th>Image</th>
-            <td><%= image_tag("", :alt => "rss feed") %></td>
+            <td><%= image_tag cactus.imageUrl %></td>
         </tr>
         <tr>
             <th>Light Requirements</th> <td><%= cactus.light_requirements %></td>
@@ -64,3 +64,5 @@
         </tr>
     <% end %>
 </table>
+
+<%= link_to 'Add Cactus', new_cactus_url %>

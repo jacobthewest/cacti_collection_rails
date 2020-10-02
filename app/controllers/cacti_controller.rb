@@ -19,7 +19,7 @@ class CactiController < ApplicationController
     end
 
     def create
-        @cactus = Cactus.new(cactus_params)
+        @cactus = Cactus.new(cacti_params)
        
         @cactus.save
         redirect_to @cactus
@@ -28,7 +28,7 @@ class CactiController < ApplicationController
     def update
         @cactus = Cactus.find(params[:id])
 
-        if @cactus.update(cactus_params)
+        if @cactus.update(cacti_params)
             redirect_to @cactus
         else
             render 'edit'
@@ -43,8 +43,8 @@ class CactiController < ApplicationController
     end
 
     private
-        def cactus_params
-            params.require(:cactus).permit(:common_name, :genus, :species, :cultivar, :light_requirements, 
+        def cacti_params
+            params.require(:cactus).permit(:common_name, :genus, :species, :cultivar, :imageUrl, :light_requirements, 
             :soil_requirements, :water_requirements, :fruit, :flower, :hardiness, :fertilizer, :propagation,
             :growth_rate, :max_size, :interesting_facts)
         end
